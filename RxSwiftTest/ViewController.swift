@@ -17,6 +17,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var labelMotoElegida: UILabel!
     
     
+    @IBAction func LoginNavigationButton(_ sender: UIButton) {
+        let loginVC = storyboard?.instantiateViewController(identifier: "loginVC") as! LoginViewController
+        navigationController?.pushViewController(loginVC, animated: true)
+        
+    }
     let disposeBag = DisposeBag()
     
     @IBAction func gitTable(_ sender: Any) {
