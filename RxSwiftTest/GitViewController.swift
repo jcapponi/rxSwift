@@ -10,7 +10,6 @@ import RxSwift
 import RxCocoa
 
 class GitViewController: UIViewController {
-
     
     @IBOutlet weak var tableView: UITableView!
     /*
@@ -23,7 +22,6 @@ class GitViewController: UIViewController {
     }()
     */
     
-    
     private let githubRepo = GitHubRepo()
     
     private let disposeBag = DisposeBag()
@@ -33,11 +31,9 @@ class GitViewController: UIViewController {
 
         tableView.frame = view.bounds
         view.addSubview(tableView)
-
         
         let reposObservable = githubRepo.getRepos().share()
         let randomNumber = Int.random(in: 0...50)
-        
         
         reposObservable.map { repos -> String in
             let repo = repos[randomNumber]
@@ -45,7 +41,6 @@ class GitViewController: UIViewController {
         }
         .startWith("Loading...")
         .bind(to: navigationItem.rx.title).disposed(by: disposeBag)
-        
         
         githubRepo.getRepos().flatMap { (repos) -> Observable<[Branch]> in
             
@@ -55,18 +50,10 @@ class GitViewController: UIViewController {
             
         }.bind(to: tableView.rx.items(cellIdentifier: "gitCustomCell", cellType: GitCustomTableViewCell.self)) {
              index, branch, cell in
-            print(cell)
-            print("branch.name..:\(branch.name)")
             
             cell.branchLabel?.text =  branch.name
-            
-            
         }.disposed(by: disposeBag)
-        
-        
-        
     }
-   
 }
 
 
