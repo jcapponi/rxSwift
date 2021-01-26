@@ -16,6 +16,13 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var labelMotoElegida: UILabel!
     
+    @IBAction func pushToSimpleTest(_ sender: UIButton) {
+        let simpleTestVC = (storyboard?.instantiateViewController(identifier: "simpleTestVC"))! as SimpleTestsViewController
+        
+        
+        navigationController?.pushViewController(simpleTestVC, animated: true)
+        
+    }
     
     @IBAction func LoginNavigationButton(_ sender: UIButton) {
         let loginVC = storyboard?.instantiateViewController(identifier: "loginVC") as! LoginViewController

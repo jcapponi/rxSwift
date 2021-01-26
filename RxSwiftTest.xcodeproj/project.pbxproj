@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1921C53025BB641E004CC0B4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1921C52F25BB641E004CC0B4 /* LoginViewController.swift */; };
+		1921C53325C02C24004CC0B4 /* SimpleTestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1921C53225C02C24004CC0B4 /* SimpleTestsViewController.swift */; };
 		19792FE425B3D60000FF4E66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19792FE325B3D60000FF4E66 /* AppDelegate.swift */; };
 		19792FE625B3D60000FF4E66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19792FE525B3D60000FF4E66 /* SceneDelegate.swift */; };
 		19792FE825B3D60000FF4E66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19792FE725B3D60000FF4E66 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		1611A6DA58F012F589F69877 /* Pods_RxSwiftTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1921C52F25BB641E004CC0B4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1921C53225C02C24004CC0B4 /* SimpleTestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTestsViewController.swift; sourceTree = "<group>"; };
 		19792FE025B3D60000FF4E66 /* RxSwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19792FE325B3D60000FF4E66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19792FE525B3D60000FF4E66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				19792FE725B3D60000FF4E66 /* ViewController.swift */,
 				19A4E85A25B5B40400B83F71 /* SelectorViewController.swift */,
 				19792FE925B3D60000FF4E66 /* Main.storyboard */,
+				1921C53225C02C24004CC0B4 /* SimpleTestsViewController.swift */,
 				1921C52F25BB641E004CC0B4 /* LoginViewController.swift */,
 				19A4E85E25B9B70F00B83F71 /* GitViewController.swift */,
 				19A4E86125B9C6A100B83F71 /* GitCustomTableViewCell.swift */,
@@ -223,6 +226,7 @@
 				19792FE625B3D60000FF4E66 /* SceneDelegate.swift in Sources */,
 				19A4E85B25B5B40400B83F71 /* SelectorViewController.swift in Sources */,
 				19A4E85F25B9B70F00B83F71 /* GitViewController.swift in Sources */,
+				1921C53325C02C24004CC0B4 /* SimpleTestsViewController.swift in Sources */,
 				19A4E86325B9C6A100B83F71 /* GitCustomTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
